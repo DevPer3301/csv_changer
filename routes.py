@@ -50,9 +50,7 @@ def main():
 
 @app.route("/upload", methods=["GET", "POST"])
 def upload():
-    # Uploading file implementationgit commit -m "first commit"
-
-    # Incorrect copy price line 2 (ID 4) and total revenue rounding to the nearest line 4 (ID 3)
+    # Uploading file implementation
 
     file = request.files["file"]
     if file.filename != "" and os.path.splitext(file.filename)[1] == ".csv":
